@@ -22,6 +22,11 @@ TMSY_VLSI_Assignments
 `-- README.md
 ```
 
+
+## Student Usage Guide
+
+Students should read [USAGE.md](USAGE.md) before uploading assignment files.
+
 ## Current Assignment
 
 ### Assignment 01: Synchronizer Design and Characterization
@@ -123,3 +128,4 @@ Best Regards,
 Maharshi Sanand Yadav  
 VLSI Trainer  
 TMSY Tutorials
+
