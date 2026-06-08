@@ -11,8 +11,8 @@ VLSI_Tasks
 |
 |-- Assignment_01_Synchronizer
 |   `-- Student_Submissions
-|       |-- Priyadharshini_S
-|       `-- Srikanth_V
+|       |-- Student_01
+|       `-- Student_02
 |
 |-- README.md
 |-- STUDENT_INSTRUCTIONS.md
@@ -28,8 +28,8 @@ Assignment_01_Synchronizer
 Student folders:
 
 ```text
-Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
-Assignment_01_Synchronizer/Student_Submissions/Srikanth_V
+Assignment_01_Synchronizer/Student_Submissions/Student_01
+Assignment_01_Synchronizer/Student_Submissions/Student_02
 ```
 
 ## Important Rules For Students
@@ -118,16 +118,16 @@ https://github.com/<trainer_username>/VLSI_Tasks
 
 ### Step 2: Open Your Own Folder
 
-Priyadharshini S should open:
+Student 01 should open:
 
 ```text
-Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
+Assignment_01_Synchronizer/Student_Submissions/Student_01
 ```
 
-Srikanth V should open:
+Student 02 should open:
 
 ```text
-Assignment_01_Synchronizer/Student_Submissions/Srikanth_V
+Assignment_01_Synchronizer/Student_Submissions/Student_02
 ```
 
 ### Step 3: Upload Files In The Correct Subfolder
@@ -222,7 +222,7 @@ Copy your files into your own folder only.
 Example:
 
 ```text
-Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
+Assignment_01_Synchronizer/Student_Submissions/Student_01
 ```
 
 ### Step 4: Check Status
@@ -233,16 +233,16 @@ git status
 
 ### Step 5: Add Your Folder
 
-For Priyadharshini S:
+For Student 01:
 
 ```bash
-git add Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
+git add Assignment_01_Synchronizer/Student_Submissions/Student_01
 ```
 
-For Srikanth V:
+For Student 02:
 
 ```bash
-git add Assignment_01_Synchronizer/Student_Submissions/Srikanth_V
+git add Assignment_01_Synchronizer/Student_Submissions/Student_02
 ```
 
 ### Step 6: Commit
@@ -299,11 +299,11 @@ CircuitVerse Circuit Details:
 Example:
 
 ```text
-Name: Priyadharshini S
+Student ID: Student_01
 Assignment Name: Assignment 01 - Synchronizer Design and Characterization
 
 GitHub Folder Link:
-https://github.com/<trainer_username>/VLSI_Tasks/tree/main/Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
+https://github.com/<trainer_username>/VLSI_Tasks/tree/main/Assignment_01_Synchronizer/Student_Submissions/Student_01
 
 EDA Playground Links:
 1FF Data Synchronizer: https://edaplayground.com/x/xxxx
@@ -344,5 +344,6 @@ Assignment_<Number>_<Assignment_Name>/Student_Submissions/<Your_Name>
 ```
 
 The same repository will be used for all future assignments.
+
 
 

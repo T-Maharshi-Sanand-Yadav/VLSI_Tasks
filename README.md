@@ -11,13 +11,13 @@ TMSY_VLSI_Assignments
 |
 |-- Assignment_01_Synchronizer
 |   `-- Student_Submissions
-|       |-- Priyadharshini_S
-|       `-- Srikanth_V
+|       |-- Student_01
+|       `-- Student_02
 |
 |-- Assignment_02_<Future_Assignment_Name>
 |   `-- Student_Submissions
-|       |-- Priyadharshini_S
-|       `-- Srikanth_V
+|       |-- Student_01
+|       `-- Student_02
 |
 `-- README.md
 ```
@@ -42,8 +42,8 @@ Students must complete the following synchronizers:
 
 ## Students
 
-- Priyadharshini S: `Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S`
-- Srikanth V: `Assignment_01_Synchronizer/Student_Submissions/Srikanth_V`
+- Student 01: `Assignment_01_Synchronizer/Student_Submissions/Student_01`
+- Student 02: `Assignment_01_Synchronizer/Student_Submissions/Student_02`
 
 ## Assignment 01 Requirements
 
@@ -130,5 +130,6 @@ Best Regards,
 Maharshi Sanand Yadav  
 VLSI Trainer  
 TMSY Tutorials
+
 
 

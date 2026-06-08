@@ -1,8 +1,8 @@
-# Priyadharshini S - Assignment 01: Synchronizer Design
+# Student 02 - Assignment 01: Synchronizer Design
 
 ## Student Details
 
-Name: Priyadharshini S
+Student ID: Student_02
 
 ## EDA Playground Links
 
@@ -29,3 +29,4 @@ https://circuitverse.org/users/217365/projects/synchronizer
 - [ ] CircuitVerse screenshots uploaded
 - [ ] Word report uploaded
 - [ ] PowerPoint presentation uploaded
+

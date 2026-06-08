@@ -9,8 +9,8 @@ For every assignment, a separate assignment folder will be created. Inside that 
 
 For the current assignment, submit only inside your own folder:
 
-- Priyadharshini S: Assignment_01_Synchronizer/Student_Submissions/Priyadharshini_S
-- Srikanth V: Assignment_01_Synchronizer/Student_Submissions/Srikanth_V
+- Student 01: Assignment_01_Synchronizer/Student_Submissions/Student_01
+- Student 02: Assignment_01_Synchronizer/Student_Submissions/Student_02
 
 Do not edit or delete any other student's folder.
 
@@ -45,4 +45,5 @@ Best Regards,
 Maharshi Sanand Yadav
 VLSI Trainer
 TMSY Tutorials
+
 

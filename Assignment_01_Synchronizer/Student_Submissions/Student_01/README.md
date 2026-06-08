@@ -1,8 +1,8 @@
-# Srikanth V - Assignment 01: Synchronizer Design
+# Student 01 - Assignment 01: Synchronizer Design
 
 ## Student Details
 
-Name: Srikanth V
+Student ID: Student_01
 
 ## EDA Playground Links
 
@@ -29,3 +29,4 @@ https://circuitverse.org/users/217365/projects/synchronizer
 - [ ] CircuitVerse screenshots uploaded
 - [ ] Word report uploaded
 - [ ] PowerPoint presentation uploaded
+
