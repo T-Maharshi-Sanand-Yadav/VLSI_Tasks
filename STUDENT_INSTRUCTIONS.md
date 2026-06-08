@@ -28,6 +28,8 @@ You must complete the following synchronizer designs:
 
 For each design, complete Cadence Virtuoso schematic, simulation, waveform verification, Liberty .lib generation, Verilog RTL, testbench, EDA Playground simulation, and CircuitVerse circuit drawing.
 
+Important CircuitVerse instruction: use only the shared CircuitVerse project below. I have already added you as collaborators. Do not create a separate CircuitVerse project for this assignment.
+
 CircuitVerse Project:
 https://circuitverse.org/users/217365/projects/synchronizer
 
@@ -43,3 +45,4 @@ Best Regards,
 Maharshi Sanand Yadav
 VLSI Trainer
 TMSY Tutorials
+

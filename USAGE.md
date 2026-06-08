@@ -42,12 +42,13 @@ Assignment_01_Synchronizer/Student_Submissions/Srikanth_V
 6. Add testbench files inside `TESTBENCH`.
 7. Add EDA Playground links inside `EDA_PLAYGROUND/eda_links.txt`.
 8. Add EDA Playground screenshots inside `EDA_PLAYGROUND/screenshots`.
-9. Add CircuitVerse screenshots inside `CIRCUITVERSE/screenshots`.
-10. Add Cadence schematics inside `CADENCE/schematics`.
-11. Add Cadence waveforms inside `CADENCE/waveforms`.
-12. Add Liberty `.lib` files inside `CADENCE/lib_files`.
-13. Add the Word report inside `DOC`.
-14. Add the PowerPoint presentation inside `PPT`.
+9. Draw and save CircuitVerse circuits only in the shared project: https://circuitverse.org/users/217365/projects/synchronizer.
+10. Add CircuitVerse screenshots inside `CIRCUITVERSE/screenshots`.
+11. Add Cadence schematics inside `CADENCE/schematics`.
+12. Add Cadence waveforms inside `CADENCE/waveforms`.
+13. Add Liberty `.lib` files inside `CADENCE/lib_files`.
+14. Add the Word report inside `DOC`.
+15. Add the PowerPoint presentation inside `PPT`.
 
 ## Assignment 01 Required Folder Structure
 
@@ -93,6 +94,14 @@ Assignment_01_Synchronizer/Student_Submissions/<Student_Name>
 `-- README.md
 ```
 
+## CircuitVerse Work
+
+Students must use only this shared CircuitVerse project:
+
+https://circuitverse.org/users/217365/projects/synchronizer
+
+The trainer has already added students as collaborators. Do not create a separate CircuitVerse project for this assignment. Create and save all six synchronizer circuits directly inside the shared project. Upload screenshots of your completed circuits in your GitHub folder under `CIRCUITVERSE/screenshots`.
+
 ## Method 1: Upload Using GitHub Website
 
 This is the recommended method for beginners.
@@ -130,6 +139,7 @@ RTL files              -> RTL
 Testbench files        -> TESTBENCH
 EDA links              -> EDA_PLAYGROUND/eda_links.txt
 EDA screenshots        -> EDA_PLAYGROUND/screenshots
+CircuitVerse project   -> https://circuitverse.org/users/217365/projects/synchronizer
 CircuitVerse images    -> CIRCUITVERSE/screenshots
 Cadence schematics     -> CADENCE/schematics
 Cadence waveforms      -> CADENCE/waveforms
@@ -304,7 +314,7 @@ EDA Playground Links:
 3FF Reset Synchronizer: https://edaplayground.com/x/cccc
 
 CircuitVerse Circuit Details:
-Circuits saved in the shared CircuitVerse synchronizer project.
+Circuits created and saved only in the shared CircuitVerse project: https://circuitverse.org/users/217365/projects/synchronizer
 ```
 
 ## Common Mistakes To Avoid
@@ -334,3 +344,5 @@ Assignment_<Number>_<Assignment_Name>/Student_Submissions/<Your_Name>
 ```
 
 The same repository will be used for all future assignments.
+
+

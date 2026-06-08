@@ -56,12 +56,14 @@ For each synchronizer, students must:
 - Write a Verilog testbench.
 - Simulate using EDA Playground.
 - Save the EDA Playground link.
-- Draw the circuit in CircuitVerse.
+- Draw the circuit only in the shared CircuitVerse project.
 - Include screenshots, observations, and timing analysis in the report.
 
 ## Shared CircuitVerse Project
 
 https://circuitverse.org/users/217365/projects/synchronizer
+
+Students have been added as collaborators. All CircuitVerse circuits for this assignment must be created and saved only in this shared project. Students should not create separate CircuitVerse projects.
 
 ## Assignment 01 Student Folder Structure
 
@@ -128,4 +130,5 @@ Best Regards,
 Maharshi Sanand Yadav  
 VLSI Trainer  
 TMSY Tutorials
+
 
