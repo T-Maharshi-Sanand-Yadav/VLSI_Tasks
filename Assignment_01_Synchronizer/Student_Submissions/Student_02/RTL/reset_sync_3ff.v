@@ -6,6 +6,7 @@ module reset_sync_3ff (
     output wire QB
 );
 
+    
 reg ff1;
 reg ff2;
 
