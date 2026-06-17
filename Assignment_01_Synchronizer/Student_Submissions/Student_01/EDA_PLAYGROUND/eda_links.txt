@@ -5,6 +5,7 @@ https://www.edaplayground.com/x/skiH
 https://www.edaplayground.com/x/dKL5
 
 3FF Data Synchronizer:
+https://www.edaplayground.com/x/F_H4
 
 1FF Reset Synchronizer:
 
