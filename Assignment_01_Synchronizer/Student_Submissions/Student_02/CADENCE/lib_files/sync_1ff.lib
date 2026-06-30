@@ -1,2 +1,534 @@
 library (TT_25_1.1) {
 /* Models written by Liberate dev from Cadence Design Systems, Inc. on Tue Jun 23 00:00:46 IST 2026 */
+comment : "";
+date : "$Date: Tue Jun 23 00:00:44 2026 $";
+revision : "1.0";
+delay_model : table_lookup;
+capacitive_load_unit (1,pf);
+current_unit : "1mA";
+leakage_power_unit : "luW";
+pulling_resistance_unit : "1kohm";
+time_unit : "1ns";
+voltage_unit : "1V";
+voltage_map (VDD, 1.1);
+voltage_map (VSS, 0);
+voltage_map (VNW, 1.1);
+voltage_map (VPW, 0);
+voltage_map (GND, 0);
+default_cell_leakage_power : 0;
+default_fanout_load : 1;
+default_max_transition : 0.48;
+default_output_pin_cap : 0;
+in_place_swap_mode : match_footprint;
+input_threshold_pct_fall : 50;
+input_threshold_pct_rise : 50;
+nom_process : 1;
+nom_temperature : 25;
+nom_voltage : 1.1;
+output_threshold_pct_fall : 50;
+output_threshold_pct_rise : 50;
+slew_derate_from_library : 0.5;
+slew_lower_threshold_pct_fall : 30;
+slew_lower_threshold_pct_rise : 30;
+slew_upper_threshold_pct_fall : 70;
+slew_upper_threshold_pct_rise : 70;
+operating_conditions (PVT_1P1V_25C) {
+process : 1;
+temperature : 25;
+voltage : 1.1;
+}
+default_operating_conditions : PVT_1P1V_25C;
+lu_table_template (constraint_template_2x2) {
+variable_1 : constrained_pin_transition;
+variable_2 : related_pin_transition;
+index_1 ("0.08, 2.8");
+index_2 ("0.01, 0.3");
+}
+lu_table_template (delay_template_2x2) {
+variable_1 : input_net_transition;
+variable_2 : total_output_net_capacitance;
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+}
+lu_table_template (mpw_constraint_template_2x2) {
+variable_1 : constrained_pin_transition;
+index_1 ("0.08, 2.8");
+}
+lu_table_template (mpw_template_2x2) {
+variable_1 : related_pin_transition;
+variable_2 : related_out_total_output_net_capacitance;
+index 1 ("0.08, 2.8");
+index 2 ("0.01, 0.3");
+}
+power_lut_template (passive_power_template_2x1) {
+variable_1 : input_transition_time;
+index_1 ("0.008, 0.28");
+}
+power_lut_template (power_template_2x2) {
+variable_1 : input_transition_time;
+variable_2 : total_output_net_capacitance;
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+}
+cell (ONEFLOPDATA) {
+area : 0;
+cell_leakage_power : 0.000119245;
+pg_pin (VDD) {
+pg_type : primary_power;
+voltage_name : "VDD";
+}
+pg_pin (VSS) {
+pg_type : primary_ground;
+voltage_name : "VSS";
+}
+leakage_power () {
+value : 0.000120319;
+when : "CLK * D";
+related_pg_pin : VDD;
+}
+leakage_power () {
+value : 0;
+when : "CLK * D";
+related_pg_pin : VSS;
+}
+leakage_power () {
+value : 0.00011817;
+when : "CLK * !D";
+related_pg_pin : VDD;
+}
+leakage_power () {
+value : 0;
+when : "CLK * !D";
+related_pg_pin : VSS;
+}
+leakage_power () {
+value : 0.000120319;
+when : "!CLK * D";
+related_pg_pin : VDD;
+}
+leakage_power () {
+value : 0;
+when : "!CLK * D";
+related_pg_pin : VSS;
+}
+leakage_power () {
+value : 0.00011817;
+when : "!CLK * !D";
+related_pg_pin : VDD;
+}
+leakage_power () {
+value : 0;
+when : "!CLK * !D";
+related_pg_pin : VSS;
+}
+leakage_power () {
+value : 0.000119245;
+related_pg_pin : VDD;
+}
+leakage_power () {
+value : 0;
+related_pg_pin : VSS;
+}
+pin (Q) {
+direction : output;
+function : "IQ";
+power_down_function : "(!VDD) + (VSS)";
+related_ground_pin : VSS;
+related_power_pin : VDD;
+max_capacitance : 0.3;
+max_transition : 7.71683;
+timing () {
+related_pin : "CLK";
+timing_sense : non_unate;
+timing_type : rising_edge;
+cell_rise (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.193693, 4.32118", \
+"0.244196, 4.37173" \
+);
+}
+rise_transition (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.261572, 7.71624", \
+"0.261449, 7.71683" \
+);
+}
+cell_fall (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.137107, 2.56541", \
+"0.188013, 2.61602" \
+);
+}
+fall_transition (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.155005, 4.54033", \
+"0.154979, 4.5406" \
+);
+}
+}
+internal_power () {
+related_pin : "CLK";
+related_pg_pin : VDD;
+rise_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000315704, 0.000162446", \
+"0.000315675, 0.000165777"  \
+);
+}
+fall_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000264409, -0.000157929", \
+"0.000258123, -0.00015182" \
+);
+}
+}
+internal_power () {
+related_pin : "CLK";
+related_pg_pin : VSS;
+rise_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000324515, 0.000273227", \
+"0.000324014, 0.000266882"  \
+);
+}
+fall_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000285825, 6.57368e-05", \
+"0.000278636, 2.79871e-05" \
+);
+}
+}
+}
+pin (QB) {
+direction : output;
+function : "IQB";
+power_down_function : "(!VDD) + (VSS)";
+related_ground_pin : VSS;
+related_power_pin : VDD;
+max_capacitance : 0.3;
+max_transition : 7.70802;
+timing () {
+related_pin : "CLK";
+timing_sense : non_unate;
+timing_type : rising_edge;
+cell_rise (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.199632, 4.32671", \
+"0.2505, 4.37754"  \
+);
+}
+rise_transition (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.260973, 7.70802", \
+"0.261128, 7.70659" \
+);
+}
+cell_fall (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.146282, 2.57364", \
+"0.196792, 2.62415" \
+);
+}
+fall_transition (delay_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.153878, 4.53718", \
+"0.153897, 4.53718"  \
+);
+}
+}
+internal_power () {
+related_pin : "CLK";
+related_pg_pin : VDD;
+rise_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000283474, 0.000138191", \
+"0.000274733, 7.43395e-05" \
+);
+}
+fall_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000299067, -0.000134746", \
+"0.000299059, -7.43395e-05"  \
+);
+}
+internal_power () {
+related_pin : "CLK";
+related_pg_pin : VSS;
+rise_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000291779, 0.000122994", \
+"0.000286009, 0.000149018"  \
+);
+}
+fall_power (power_template_2x2) {
+index_1 ("0.008, 0.28");
+index_2 ("0.01, 0.3");
+values ( \
+"0.000317164, 0.000124999", \
+"0.000316958, 0.00012795" \
+);
+}
+pin (CLK) {
+clock : true;
+direction : input;
+related_ground_pin : VSS;
+related_power_pin : VDD;
+max_transition : 0.28;
+capacitance : 0.000182257;
+rise_capacitance : 0.000183826;
+rise_capacitance_range (0.000165452, 0.000202202);
+fall_capacitance : 0.000180687;
+fall_capacitance_range (0.00015922, 0.000202154);
+timing () {
+related_pin : "CLK";
+sdf_cond : "adacond_D == 1'b1";
+timing_type : min_pulse_width;
+when : "D";
+rise_constraint (mpw_constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+values (\
+"0.0805664, 2.80029" \
+);
+}
+fall_constraint (mpw_constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+values ( \
+"0.0805664, 2.80029" \
+);
+}
+}
+timing () {
+related_pin : "CLK";
+sdf_cond : "adacond_NOT_D == 1'b1";
+timing_type : min_pulse_width;
+when : "!D";
+rise_constraint (mpw_constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+values ( \
+"0.0805664, 2.80029" \
+);
+}
+fall_constraint (mpw_constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+values ( \
+"0.0805664, 2.80029" \
+);
+}
+}
+internal_power () {
+when : "D";
+related_pg_pin : VDD;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000291541, 0.000289664" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000411316, 0.000407517" \
+);
+}
+}
+internal_power () {
+when : "D";
+related_pg_pin : VSS;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000412305, 0.000410474" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000292421, 0.000288481" \
+);
+}
+internal_power () {
+when : "!D";
+related_pg_pin : VDD;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000284891, 0.000281523" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000402506, 0.000400017" \
+);
+}
+}
+internal_power () {
+when : "!D";
+related_pg_pin : VSS;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000408301, 0.000405022" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000277786, 0.000275211" \
+);
+}
+}
+}
+pin (D) {
+direction : input;
+related_ground_pin : VSS;
+related_power_pin : VDD;
+max_transition : 2.8;
+capacitance : 0.00016805;
+rise_capacitance : 0.000168596;
+rise_capacitance_range (0.000162595, 0.000174597);
+fall_capacitance : 0.000167503;
+fall_capacitance_range (0.000160052, 0.000174954);
+timing () {
+related_pin : "CLK";
+timing_type : hold_rising;
+rise_constraint (constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+index_2 ("0.01, 0.3");
+values ( \
+"-0.0344353, -0.0144012", \
+"-0. 158572, -0.134598" \
+);
+}
+fall_constraint (constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+index_2 ("0.01, 0.3");
+values ( \
+"-0.0333375, 0.0127731", \
+"-0.299329, -0.249748" \
+);
+}
+timing () {
+related_pin : "CLK";
+timing_type : setup_rising;
+rise_constraint (constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+index_2 ("0.01, 0.3");
+values ( \
+"0.0408835, 0.019342",\
+"0.171408, 0.142632" \
+);
+}
+fall_constraint (constraint_template_2x2) {
+index_1 ("0.08, 2.8");
+index_2 ("0.01, 0.3");
+values ( \
+"0.0442284, -0.0103027", \
+"0.31792, 0.261782" \
+);
+}
+}
+internal_power () {
+when : "CLK";
+related_pg_pin : VDD;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"-4.02364e-05, -4.51651e-05" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"5.61684e-05, 5.6593e-05" \
+);
+}
+internal_power () {
+when : "CLK";
+related_pg_pin : VSS;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"5.7212e-05, 5.28742e-05" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"-4.06931e-05, -4.08118e-05" \
+);
+}
+}
+internal_power () {
+when : "!CLK";
+related_pg_pin : VDD;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values
+"0.000377826, 0.000365607" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.00046653, 0.000456582" \
+);
+}
+}
+internal_power () {
+when : "!CLK";
+related_pg_pin : VSS;
+rise_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000494673, 0.000482463" \
+);
+}
+fall_power (passive_power_template_2x1) {
+index_1 ("0.008, 0.28");
+values ( \
+"0.000349375, 0.000339369" \
+);
+}
+}
+}
+ff (IQ,IQB) {
+clocked_on : "CLK";
+next_state : "D";
+power_down_function : "(!VDD) + (VSS)";
+}
+}
+}
+
+
+
